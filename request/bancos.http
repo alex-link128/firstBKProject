@@ -1,0 +1,34 @@
+@api = http://localhost:3000/bancos
+
+###Getting all banks
+GET {{api}}
+
+###Add a bank
+POST {{api}}
+Content-Type: application/json
+
+{
+    "clave": null,
+    "banco": "Santander",
+    "estatus": null 
+}
+
+
+### Getting a bank by id
+GET {{api}}/Nu Bank
+
+
+### Deleting a bank
+DELETE {{api}}/Banco Test
+
+### Get total banks on table
+GET {{api}}/count
+
+### Update a bank
+PUT {{api}}/Nu Bank
+Content-Type: application/json
+
+{
+    "banco": "Nu Bank",
+    "estatus": 1
+}
